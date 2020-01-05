@@ -4,12 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Crytsal selector</title>
-    <link rel="stylesheet" href="./assets/css/style.css"> 
-    <link rel="stylesheet" href="./assets/css/reset.css"> 
+    <title>Crytsals | Collector</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/all.css">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> 
 </head>
 <body>
+    <div class="jumbotron bg-dark text-light">
+        <h1 class="display-4">Crystals Collector <i class="fas fa-gem"><i class="fas fa-gem"></i><i class="fas fa-gem"></i></i><i class="fas fa-gem"></i></h1>
+        <p class="lead">Objective: Click on the crystals in order to match the number below.</p>
+        <hr class="my-4 bg-light">
+        <p>If you go over the target number, you lose.</p>
+        <p>Crystal value and target number will change randomly each round.</p>
+        <a class="btn btn-primary btn-lg" href="#" role="button">Begin</a>
+    </div>
+    <h1><span id="number-to-guess"></span></h1>
+    <div id="crystals"></div>
+    <br><br><br><br><br><br><br><br>
     
-<script type="text/javascript"> src="./assets/javascript/game.js"</script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="./assets/javascript/game.js"></script>
 </body>
 </html>
