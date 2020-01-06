@@ -1,4 +1,10 @@
 .crystal-image {
-    width: 200px;
+    width: 250px;
     height: 200px;
   }
+
+.crystal-image:hover {
+    padding: 5px;
+    border-radius: 25px;
+    border: 2px solid rgb(95, 94, 94);
+}
