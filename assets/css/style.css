@@ -8,3 +8,7 @@
     border-radius: 25px;
     border: 2px solid rgb(95, 94, 94);
 }
+
+#score {
+    padding-left: 100px;
+}
