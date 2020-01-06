@@ -12,3 +12,11 @@
 #score {
     padding-left: 100px;
 }
+
+#win-count,
+#loss-count {
+    font-weight: bold;
+    font-size: 30px;
+    padding: 0 50px 0 20px;
+    margin: 0;
+}

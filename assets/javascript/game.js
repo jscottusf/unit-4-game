@@ -1,5 +1,7 @@
 var numberOptions;
 var crystalNumber;
+var wins = 0;
+var losses = 0;
 
 $(document).ready(function() {
     var clickElement = document.createElement("audio");
@@ -39,14 +41,18 @@ $(document).ready(function() {
                 if (counter === targetNumber) {
                 clickElement.pause();
                 winElement.play();
+                wins++;
                 $("#winner").text("Winner winner chicken dinner! Try again?");
                 $("#crystals").empty();
+                $("#win-count").text("Wins: " + wins);
                 }
                 else if (counter > targetNumber) {
                 clickElement.pause();
                 lossElement.play();
+                losses++;
                 $("#winner").text("Try again, loser");
                 $("#crystals").empty();
+                $("#loss-count").text("Losses: " + losses);
                 }
             });
         });
