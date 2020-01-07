@@ -28,7 +28,6 @@ $(document).ready(function() {
                 imageCrystal.addClass("crystal-image");
                 imageCrystal.attr("src", "./assets/images/gem" + [i] + ".jpg");
                 imageCrystal.attr("data-crystalvalue", crystalNumber);
-                console.log(crystalNumber);
                 crystalNumbersSplice();
                 $("#crystals").append(imageCrystal);
             }
