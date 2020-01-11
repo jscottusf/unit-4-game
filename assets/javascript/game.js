@@ -4,6 +4,7 @@ var wins = 0;
 var losses = 0;
 
 $(document).ready(function() {
+    //audio elements
     var clickElement = document.createElement("audio");
     clickElement.setAttribute("src", "./assets/sounds/chime.wav");
     var winElement = document.createElement("audio");
@@ -13,6 +14,7 @@ $(document).ready(function() {
     var drumElement = document.createElement("audio");
     drumElement.setAttribute("src", "./assets/sounds/drums.wav");
 
+    //when you click on the begin button, initialize game
     $(".btn-lg").text("Begin");
     $(".btn-lg").on("click", function() {
         drumElement.play();
@@ -31,6 +33,8 @@ $(document).ready(function() {
                 crystalNumbersSplice();
                 $("#crystals").append(imageCrystal);
             }
+
+            //when you click on crystal image, do stuff
             $(".crystal-image").on("click", function() {
                 clickElement.play();
                 var crystalValue = ($(this).attr("data-crystalvalue"));
@@ -57,10 +61,11 @@ $(document).ready(function() {
         });
         $(".btn-lg").on("click", function() {
             setNumbers();
-            });
+        });
     });
 });
 
+//remove numbers from options array so that crystals all have different random numbers
 function crystalNumbersSplice() {
     var index = numberOptions.indexOf(crystalNumber);
     if (index > -1) {
@@ -68,6 +73,7 @@ function crystalNumbersSplice() {
     }
 }
 
+//reset game and number array
 function setNumbers() {
     numberOptions = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
     counter = 0;
